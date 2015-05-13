@@ -1,0 +1,19 @@
+footer{
+  text-align:center;
+  background: #000;
+  color : #FFF;
+}
+
+.footer-content{
+  margin:10px 0;
+}
+
+.app-body{
+  min-height:500px;
+  background:#FFF;
+  margin-top:-20px;
+}
+
+body{
+  background-color:#ededb2 !important;
+}

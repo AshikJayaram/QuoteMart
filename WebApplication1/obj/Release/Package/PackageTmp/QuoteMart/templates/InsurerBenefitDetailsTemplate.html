@@ -1,0 +1,45 @@
+﻿<div class="container app-body">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="meta alert alert-info  text-center" style="margin-top:15px">
+                <label class="premium-amount ">Premium Amount</label>
+                <span class="date premium-amount" style="margin-left:15px" data-ng-bind="Model.BenefitDetails.Premium | currency:'&#8377'"></span>
+            </div>
+            <div class="ui special cards">
+                <div class="card" data-ng-repeat="benefit in Model.BenefitDetails.Benefits" onclick="createSemantic()">
+                    <div class="dimmable image">
+                        <div class="ui dimmer">
+                            <div class="content">
+                                <div class="center" data-ng-init="Model.CheckBenefit($index)">
+                                    <div class="ui inverted button" data-ng-click="Model.AddBenefit($index)" data-ng-bind="benefit.Text"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="benefit-grid" data-ng-class="{true:'inactivenew',false : 'activenew'}[benefit.IsActive]">
+                            <p data-ng-bind="benefit.Description"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 alert alert-info  text-center" style="margin-top:15px;">
+                <input class="btn btn-default" type="button" value="Buy here and avail 5% discount" data-ng-click="Model.GetInsurerDetails(); submitted=true"> Or
+
+                <input class="btn btn-default" type="button" value="Visit insurer website" data-ng-click="Model.GetInsurerDetails()">
+            </div>
+            <div class="col-xs-12 alert alert-success  text-center" style="margin-top:15px; " data-ng-show="submitted">
+                <span><strong>Congratulations!! Your Quote is successfully created.</strong> </span>
+                </div>
+            </div>
+    </div>
+</div>
+
+<script>
+    function createSemantic() {
+
+        $(document).ready(function () {
+            $('.special.cards .image').dimmer({
+                on: 'hover'
+            });
+        });
+    }
+</script>

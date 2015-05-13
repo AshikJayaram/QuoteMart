@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quote Mart App</title>
+
+      <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+      <link href="../Content/bootstrap-theme.min.css" rel="stylesheet" />
+      <link href="../Content/style.css" rel="stylesheet" />
+
+      <link href="../Content/semantic.min.css" rel="stylesheet" />
+      <script src="../Scripts/jquery-1.10.2.min.js"></script>
+      <script src="../Scripts/custom-semantic.js"></script>
+      <script src="../Scripts/bootstrap.min.js"></script>
+      <script src="../Scripts/angular.js"></script>
+      
+      <script src="../Scripts/angular-route.min.js"></script>
+      <script src="../Scripts/semantic.min.js"></script>
+
+      <script src="js/QuoteMart.js"></script>
+      <script src="js/InsurerDetails.js"></script>
+      <script src="js/CustomerDetails.js"></script>
+      <script src="js/InsurerBenefitDetails.js"></script>
+    </head>
+  <body data-ng-app="QuoteMart" data-ng-controller="QuoteMartController">
+    <div class="container">
+      <div class="row">
+        <nav class="navbar navbar-inverse" role="navigation">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Quote Mart</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navbar">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+              <form class="navbar-form navbar-right" role="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+              </form>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"></a></li>
+
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+      </div>
+    </div>
+
+      <div data-ng-view=""></div>
+    <div class="container app-body">
+      <div class="row">
+        <div class="col-xz-12">
+          
+        </div>
+      </div>
+    </div>
+    <footer class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <p class="footer-content">footer content goes here</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

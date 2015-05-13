@@ -1,0 +1,4 @@
+c:\users\training\documents\visual studio 2013\Projects\Team17\Service\bin\Debug\Service.dll
+c:\users\training\documents\visual studio 2013\Projects\Team17\Service\bin\Debug\Service.pdb
+c:\users\training\documents\visual studio 2013\Projects\Team17\Service\obj\Debug\Service.dll
+c:\users\training\documents\visual studio 2013\Projects\Team17\Service\obj\Debug\Service.pdb
